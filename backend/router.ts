@@ -40,4 +40,11 @@ router.put('/user', async ctx => {
     ctx.response.body = userService.updateUser(userToUpdate);
 });
 
+router.get('/images/:productname', async ctx => {
+    const productname: string = ctx.params.productname!;
+    const img = await Deno.readFile('backend/assets/' + productname);
+    ctx.response.headers.set('content-type', 'image/jpg');
+    ctx.response.body = img;
+})
+
 export default router;

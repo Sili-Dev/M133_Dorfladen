@@ -7,70 +7,70 @@ export class ProductService {
             name: 'Appenzeller',
             price: 20,
             sale: 10,
-            directory: '../assets/appenzeller.jpg',
+            directory: 'appenzeller.jpg',
         },
         {
             id: 2,
             name: 'Eier',
             price: 20,
             sale: 10,
-            directory: '../assets/eier.jpg'
+            directory: 'eier.jpg'
         },
         {
             id: 3,
             name: 'Ice Tea',
             price: 20,
             sale: 10,
-            directory: '../assets/icedtea.jpg'
+            directory: 'icedtea.jpg'
         },
         {
             id: 4,
             name: 'Kalbswurst',
             price: 20,
             sale: 10,
-            directory: '../assets/kalbsbratwuerste.jpg'
+            directory: 'kalbsbratwuerste.jpg'
         },
         {
             id: 5,
             name: 'Krustenkranz',
             price: 20,
             sale: 10,
-            directory: '../assets/krustenkranz.jpg'
+            directory: 'krustenkranz.jpg'
         },
         {
             id: 6,
             name: 'Nektarinen',
             price: 20,
             sale: 10,
-            directory: '../assets/nektarinen.jpg'
+            directory: 'nektarinen.jpg'
         },
         {
             id: 7,
             name: 'Olivenöl',
             price: 20,
             sale: 10,
-            directory: '../assets/olivenoel.jpg'
+            directory: 'olivenoel.jpg'
         },
         {
             id: 8,
             name: 'Senf',
             price: 20,
             sale: 10,
-            directory: '../assets/senf.jpg'
+            directory: 'senf.jpg'
         },
         {
             id: 9,
             name: 'Tomaten',
             price: 20,
             sale: 10,
-            directory: '../assets/tomaten.jpg'
+            directory: 'tomaten.jpg'
         },
         {
             id: 10,
             name: 'Vaniell Glace',
             price: 20,
             sale: 10,
-            directory: '../assets/vanille_glace.jpg'
+            directory: 'vanille_glace.jpg'
         },
     ];
 

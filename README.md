@@ -1,3 +1,10 @@
 # M133_Dorfladen
 
-Run backend: `deno run --allow-read --allow-net backend/server.ts`
+This project was created by Kota Schnider & Silvan Heini.
+
+## Run backend:
+`deno run --allow-read --allow-net backend/server.ts`
+
+## Run frontend:
+`cd frontend`
+`ng serve --open`

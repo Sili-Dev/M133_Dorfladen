@@ -7,4 +7,5 @@ This project was created by Kota Schnider & Silvan Heini.
 
 ## Run frontend:
 `cd frontend`
+`npm i`
 `ng serve --open`

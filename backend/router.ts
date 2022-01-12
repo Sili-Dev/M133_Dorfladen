@@ -23,10 +23,12 @@ router.get('/products/:id', ctx => {
     ctx.response.body = productService.getProductById(id);
 });
 
-router.get('/user/:email', ctx => {
+router.get('/user/:email/:firstname/:lastname', ctx => {
     const email: string = ctx.params.email!;
+    const firstname: string = ctx.params.firstname!;
+    const lastname: string = ctx.params.lastname!;
     ctx.response.headers.set('Content-Type', 'application/json');
-    ctx.response.body = userService.signIn(email);
+    ctx.response.body = userService.signIn(firstname, lastname, email);
 });
 
 router.get('/user', ctx => {

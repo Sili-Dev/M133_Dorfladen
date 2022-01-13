@@ -4,5 +4,5 @@
 
 ```
 npm install
-ng serve --start
+npm i ng serve --open
 ```

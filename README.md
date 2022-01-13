@@ -6,6 +6,9 @@ This project was created by Kota Schnider & Silvan Heini.
 `deno run --allow-read --allow-net backend/server.ts`
 
 ## Run frontend:
-`cd frontend`
-`npm i`
-`ng serve --open`
+```
+npm install -g @angular/cli
+cd frontend
+npm i
+ng serve --open
+```

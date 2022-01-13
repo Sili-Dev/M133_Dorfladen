@@ -6,6 +6,8 @@ This project was created by Kota Schnider & Silvan Heini.
 `deno run --allow-read --allow-net backend/server.ts`
 
 ## Run frontend:
-```cd frontend
+```
+cd frontend
 npm i
-ng serve --open```
+ng serve --open
+```

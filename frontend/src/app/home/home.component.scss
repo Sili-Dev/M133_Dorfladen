@@ -1,0 +1,21 @@
+img {
+    width: 100%;
+}
+
+p {
+    display: inline;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 500px;
+    border: 1px solid;
+    border-radius: 15px;
+    margin: 20px;
+    padding: 20px;
+}

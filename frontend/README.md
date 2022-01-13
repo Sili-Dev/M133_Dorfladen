@@ -4,5 +4,5 @@
 
 ```
 npm install
-ng open --start
+ng serve --start
 ```

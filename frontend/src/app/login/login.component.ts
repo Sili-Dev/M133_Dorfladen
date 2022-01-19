@@ -26,9 +26,11 @@ export class LoginComponent implements OnInit {
   }
 
   async login() {
-    if (this.user.email.trim().length != 0 && this.user.firstname.trim().length != 0 && this.user.lastname.trim().length != 0) {
+    if (this.user.email.trim().match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/) && this.user.firstname.trim().length != 0 && this.user.lastname.trim().length != 0) {
       await this.userService.login(this.user.email, this.user.firstname, this.user.lastname);
       this.router.navigateByUrl('cart');
+    } else {
+      alert('Your informations are incorrect.');
     }
   }
 

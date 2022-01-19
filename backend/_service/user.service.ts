@@ -13,7 +13,7 @@ export class UserService {
     ];
 
     signIn(firstname: string, lastname: string, email: string) {
-        if (email.trim().length != 0 && firstname.trim().length != 0 && lastname.trim().length != 0) {
+        if (email.trim().match(/^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/) && firstname.trim().length != 0 && lastname.trim().length != 0) {
             for (let user of this.db) {
                 if (user.email.toLowerCase() == email.toLowerCase()) {
                     user.cart = [];
